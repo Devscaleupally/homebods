@@ -62,7 +62,7 @@ $(".register-btn").on('click', function(e){
 					  var errorCode = error.code;
 					  var errorMessage = error.message;
 					  
-					  alert(errorMessage);
+					  //alert(errorMessage);
 
 					}).then(function(data){
 						jQuery(".ct-loading-main").hide();
@@ -73,16 +73,11 @@ $(".register-btn").on('click', function(e){
 						}
 					});
 				}else{
-					alert(response.message);
+					//alert(response.message);
 				}
-
-				
-
-				
+                jQuery(".ct-loading-main").hide();
 			}
 		})
-
-
 	});
 
 		
